@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Books - Digital Library</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://unpkg.com/multiple-select@1.5.2/dist/themes/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5587893eae.js" crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+        </style>
+        <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <div>
+                    <div class="logo">
+                        <a href="home.html"><img src="images/logo3.png"/>
+                        <ul style="color: white; padding-left: 20px;">DIGITAL LIBRARY</ul></a>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="books.html">BOOKS</a></li>
+                            <li><a href="sign_in.html">STUDENT-SIGNIN</a></li>
+                            <li><a href="sign_up.html">STUDENT-SIGNUP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="book">
+                <br><br><br>
+                    <div class="container pt-4 mt-5 my-3">
+                    <h1 class="text-center display-5 font-weight-bold welcome-text" style="font-size: 50px">Welcome To</h1><br>
+                    <h1 style="text-align: center; font-size: 75px;">DIGITAL LIBRARY</h1><br>
+                    <hr style="border-block-color: orange;">
+                    <p style="font-size:30px;" class="text-center" id="subHead1"><b>Knowing your Interests</b></p>
+                    <hr style="border-block-color: orange;">
+                    <p style="font-size:25px;" class="text-center" id="subHead1"><b>List of E-Books</b></p><br>
+                    <p style="font-size:20px;" class="text-center" id="subHead2"><b>Filter By Title or Author or Subject or Publish-Date</b></p>
+                    <hr style="border-block-color: orange;">
+
+                    <table  id="myTable" class="table table-dark">
+                        <thead style="color: lightgoldenrodyellow;">
+                            <tr>
+                                <th>TITLE</th>
+                                <th>AUTHOR</th>
+                                <th>SUBJECT</th>
+                                <th>PUBLISH-DATE</th>
+                            </tr>
+                        </thead>
+                        <tbody style="color: black;">
+                            <tr>
+                                <td>The Guide</td>
+                                <td>R.K.NARAYAN</td>
+                                <td>Fiction</td>
+                                <td>23-09-1958</td>
+                            </tr>
+                            <tr>
+                                <td>Godaan - The Gift of a Cow</td>
+                                <td>JAI RATAN & P. LAL</td>
+                                <td>Hindi Novel</td>
+                                <td>29-06-1957</td>
+                            </tr>
+                            <tr>
+                                <td>The Autobiography of an Unknown Indian</td>
+                                <td>NIRAD C. CHAUDHURI</td>
+                                <td>Autobiography</td>
+                                <td>03-07-1960</td>
+                            </tr>
+                            <tr>
+                                <td>Publish News Letter</td>
+                                <td>AMIT GARG</td>
+                                <td>Computer Science</td>
+                                <td>08-01-2011</td>
+                            </tr>
+                            <tr>
+                                <td>Baburnama</td>
+                                <td>BABUR</td>
+                                <td>Historic</td>
+                                <td>1520</td>
+                            </tr>
+                            <tr>
+                                <td>Coolie</td>
+                                <td>MULK RAJ ANANDA</td>
+                                <td>Fiction</td>
+                                <td>15-09-1996</td>
+                            </tr>
+                            <tr>
+                                <td>A Suitable Boy</td>
+                                <td>VIKKRAM SETH</td>
+                                <td>Fiction</td>
+                                <td>14-08-2002</td>
+                            </tr>
+                            <tr>
+                                <td>A Tale of Two Cities</td>
+                                <td>CHARLES DARWIN</td>
+                                <td>Fiction</td>
+                                <td>28-09-2001</td>
+                            </tr>
+                            <tr>
+                                <td>Crime and Punishment</td>
+                                <td>DOSTOEVSKY</td>
+                                <td>Fiction</td>
+                                <td>13-03-2000</td>
+                            </tr>
+                            <tr>
+                                <td>Old Man and the Sea</td>
+                                <td>ERNEST HMINGWAY</td>
+                                <td>Fiction</td>
+                                <td>18-12-2005</td>
+                            </tr>
+                            <tr>
+                                <td>Origin of Species</td>
+                                <td>CHARLES DARWIN</td>
+                                <td>Fiction</td>
+                                <td>03-12-1997</td>
+                            </tr>
+                            <tr>
+                                <td>A Week with Gandhi</td>
+                                <td>LOUIS FISHER</td>
+                                <td>Fiction</td>
+                                <td>08-12-1989</td>
+                            </tr>
+                            <tr>
+                                <td>Beautiful Disaster</td>
+                                <td>JAMIE MCGUIRE</td>
+                                <td>Romance</td>
+                                <td>26-05-2011</td>
+                            </tr>
+                            <tr>
+                                <td>The Hunger Games</td>
+                                <td>SUZANNE COLLINS</td>
+                                <td>Sci-Fiction</td>
+                                <td>14-09-2008</td>
+                            </tr>
+                            <tr>
+                                <td>Divergent</td>
+                                <td>VERONICA ROTH</td>
+                                <td>Sci-Fiction</td>
+                                <td>25-04-2011</td>
+                            </tr>
+                            <tr>
+                                <td>Dune</td>
+                                <td>FRANK HERBERT</td>
+                                <td>Sci-Fiction</td>
+                                <td>01-06-1965</td>
+                            </tr>
+                            <tr>
+                                <td>Mockingjay</td>
+                                <td>SUZANNE COLLINS</td>
+                                <td>Sci-Fiction</td>
+                                <td>24-08-2010</td>
+                            </tr>
+                            <tr>
+                                <td>Foundation</td>
+                                <td>ISAAC ASIMOV</td>
+                                <td>Sci-Fiction</td>
+                                <td>30-09-1951</td>
+                            </tr>
+                            <tr>
+                                <td>Harry Potter and the Deathly Hallows</td>
+                                <td>J.K. ROWLING</td>
+                                <td>Adventure</td>
+                                <td>21-07-2007</td>
+                            </tr>
+                            <tr>
+                                <td>Catching Fire</td>
+                                <td>SUZANNE COLLINS</td>
+                                <td>Sci-Fiction</td>
+                                <td>01-09-2009</td>
+                            </tr>
+                            <tr>
+                                <td>Insurgent</td>
+                                <td>VERONICA ROTH</td>
+                                <td>Fiction</td>
+                                <td>01-05-2012</td>
+                            </tr>
+                            <tr>
+                                <td>The Maze Runner</td>
+                                <td>JAMES DASHER</td>
+                                <td>Adventure, Mystery</td>
+                                <td>06-10-2009</td>
+                            </tr>
+                            <tr>
+                                <td>Maze Runner: The Death Cure</td>
+                                <td>JAMES DASHER</td>
+                                <td>Adventure, Mystery</td>
+                                <td>14-11-2017</td>
+                            </tr>
+                            <tr>
+                                <td>Maze Runner: The Scorch Trials</td>
+                                <td>JAMES DASHER</td>
+                                <td>Adventure, Mystery</td>
+                                <td>23-06-2015</td>
+                            </tr>
+                            <tr>
+                                <td>The Maze Runner: My friend George</td>
+                                <td>JAMES DASHER</td>
+                                <td>Adventure, Mystery</td>
+                                <td>01-09-2014</td>
+                            </tr>
+                            <tr>
+                                <td>Lara Croft: Tomb Raider</td>
+                                <td>DAVE STERN</td>
+                                <td>Adventure</td>
+                                <td>01-01-2001</td>
+                            </tr>
+                            <tr>
+                                <td>The Beekeeper's Apprentice</td>
+                                <td>LAUIRE R. KING</td>
+                                <td>Mystery</td>
+                                <td>15-01-1994</td>
+                            </tr>
+                            <tr>
+                                <td>The Hound of the Baskervilles</td>
+                                <td>SIR AUTHUR CONAN DOYLE</td>
+                                <td>Mystery</td>
+                                <td>01-09-1991</td>
+                            </tr>
+                            <tr>
+                                <td>Computing Fundamentals and C Programming</td>
+                                <td>E BALAGURUSWAMY</td>
+                                <td>Computer Science</td>
+                                <td>20-09-2017</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript and jQuery</td>
+                                <td>JON DUCKETT</td>
+                                <td>Information Technology</td>
+                                <td>08-07-2014</td>
+                            </tr>
+                            <tr>
+                                <td>***<>HTML and CSS: Design and Build Webs</td>
+                                <td>JON DUCKETT</td>
+                                <td>Information Technology</td>
+                                <td>08-11-2011</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    </div>
+                <script>
+                    $(document).ready(function() {
+                    $('#myTable').dataTable();
+                });
+                </script>
+            </section>
+            <footer>
+                <div>
+                    <p style="text-align: center; font-size: 20px;" class="foot"><b>Copyrights by VITESH BHARADWAJ MALLIBHAT</b></p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
